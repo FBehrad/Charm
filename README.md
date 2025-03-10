@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ```
 
 ## Model checkpoints
-Pretrained models are available at [HuggingFace](https://huggingface.co/FatemehBehrad/Charm).
+Pretrained models are available at [**HuggingFace**](https://huggingface.co/FatemehBehrad/Charm) 🤗.
 
 
 ## Quick inference
