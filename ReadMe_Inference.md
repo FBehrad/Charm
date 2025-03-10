@@ -21,7 +21,7 @@ ___
 
 <div align="center">
 <a href="https://github.com/FBehrad/Charm">
-    <img src="https://github.com/FBehrad/Charm/blob/main/charm.gif?raw=true" alt="Charm tokenizer" width="700"/>
+    <img src="https://github.com/FBehrad/Charm/blob/main/Figures/charm.gif?raw=true" alt="Charm tokenizer" width="700"/>
 </a>
 </div>
 

@@ -4,7 +4,7 @@
 
 <div align="center">
 <a href="https://github.com/FBehrad/Charm">
-    <img src="https://github.com/FBehrad/Charm/blob/main/MainFigure_new.jpg?raw=true" alt="Overall framework" width="400"/>
+    <img src="https://github.com/FBehrad/Charm/blob/main/Figures/MainFigure.jpg?raw=true" alt="Overall framework" width="400"/>
 </a>
 </div>
 
