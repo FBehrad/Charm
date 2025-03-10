@@ -1,0 +1,30 @@
+data:
+  dataset: aadb  
+  augmentation: all  
+  patch_selection: original  
+  initial_hidden_size : 512  
+  max_seq_len_from_original_res: 1024  
+  patch_size: 14 
+  patch_stride: 14
+  factor: 0.5 
+  scales: 2
+  muller: False
+
+path:
+  ratings_path: D:\Datasets\AADB\imgListFiles_label
+  img_folder: D:\Datasets\AADB\train
+  mask_folder: D:\Datasets\AADB\train_mask
+  test_folder : D:\Datasets\AADB\test
+  test_mask_folder : D:\Datasets\AADB\test_mask
+  warm_start_checkpoint: Best_models\aadb\original\best_model.pth
+
+training:
+  batch_size: 1 
+  shuffle_data: False
+
+model:
+  encoder_name: facebook/dinov2-small 
+  multi_class: False 
+  flexiViT: 
+    enable: False
+    new_patch_size : 56 

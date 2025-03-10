@@ -1,0 +1,81 @@
+data:
+  dataset: tad66k  # aadb, tad66k, ava, para, baid, spaq, koniq10k
+  augmentation: all  # HF, GS, RR, all(without GS), None
+  patch_selection: random  # ['saliency', 'random', 'frequency', 'gradient', 'entropy', 'original']
+  max_seq_len_from_original_res: 1024  # ViT input length
+  patch_size: 14 # 14 for dinov2-small and dinov2-base, 16 for vit-small, and 32 for vit-base
+  patch_stride: 14
+  factor: 0.5  # the maximum downscaling of unimportant patches
+  scales: 2
+
+path:
+  ratings_path: D:\Datasets\TAD66k\labels.csv
+  img_folder: D:\Datasets\TAD66k\train_imgs
+  mask_folder: D:\Datasets\TAD66k\train_depths
+  test_folder: D:\Datasets\TAD66k\test_imgs
+  test_mask_folder: D:\Datasets\TAD66k\test_depths
+  warm_start_checkpoint: null
+
+training:
+  batch_size: 16 
+  shuffle_data: False
+  train_size: 0.95 # the portion of the dataset which is used for training, the rest is used for validation
+  num_workers: 8 
+  warm_start: False
+  num_epochs: 30
+  optimizer: AdamW # Adam or sgd or AdamW
+  test_epochs: 3 # This variable specifies the number of epochs after which the model is evaluated on the test set.
+  save_model_steps: 3 # This variable specifies the number of epochs after which the model is saved.
+  learning_rate:
+    lr: 0.00001
+    scheduler:
+      type: cosine # cosine or step_lr
+      cosine:
+        cycle_mult: 1.0
+        min_lr: 0.000001
+        warm_up: 0  # number of epochs, it is better to use  10%  of the whole epochs
+        gamma: 0.8
+      step_lr:
+        milestones:
+          - 5
+          - 10
+        gamma: 0.5
+  weight_decay: 0.02 # put 0 for not applying weight decay
+  momentum: 0.9
+  max_grad_norm: 1.0
+  accumulation_steps: 1 # 1 for not using accumulated gradients
+  gradient_clipping: True
+  LLDR: # Layer-wise learning rate decay
+    enable: False
+    max_lr_patch: 0.00001
+    cosine_scheduler_patch:
+      cycle_mult: 1.0
+      min_lr: 0.000001
+      warm_up: 3 # number of epochs, it is better to use  10%  of the whole epochs
+      gamma: 0.8
+    weight_decay_patch: 0.01
+
+    max_lr_encoder: 0.00001
+    cosine_scheduler_encoder:
+      cycle_mult: 1.0
+      min_lr: 0.000001
+      warm_up: 3  # number of epochs, it is better to use  10%  of the whole epochs
+      gamma: 0.8
+    weight_decay_encoder: 0.01
+
+    max_lr_mlphead: 0.0001
+    cosine_scheduler_mlp:
+      cycle_mult: 1.0
+      min_lr: 0.00001
+      warm_up: 0  # number of epochs, it is better to use  10%  of the whole epochs
+      gamma: 0.8
+    weight_decay_mlp: 0.01
+
+model:
+  encoder_name: facebook/dinov2-small #flexiViT 'facebook/dinov2-small' 'facebook/dinov2-base' microsoft/swin-small-patch4-window7-224 #'facebook/dino-vits16' # WinKawaks/vit-small-patch16-224  #google/vit-base-patch32-224-in21k  google/vit-base-patch32-384 "google/vit-base-patch16-224-in21k" 'facebook/dinov2-large'
+  frozen_vit: False
+  masked: False
+  mixout: False
+  mixout_prob: 0.7
+  dropout_prob: 0.1  # put zero not to have dropout
+  multi_class: False # Just for AADB

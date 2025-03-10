@@ -1,0 +1,17 @@
+torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --index-url https://download.pytorch.org/whl/cu117
+ml-collections
+tqdm
+tensorboard
+tensorboardX
+Pillow
+scipy
+numpy
+transformers==4.36.0
+huggingface-hub==0.17.3
+matplotlib
+pandas
+scikit-learn
+PyYAML
+wandb
+timm==0.4.12
+pandas
