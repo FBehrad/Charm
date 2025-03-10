@@ -28,16 +28,16 @@ datasets (up to 8.1 %) using a lightweight ViT backbone.
 
 ## Performance improvement across various datasets
 Charm not only improves the performance of image aesthetic/quality assessment models but also accelerates their convergence.
-
+<div align="center">
 <img src=Figures/table1.jpg width="400" />
-
+</div>
 Performance improvement across different IAA and
 IQA datasets by replacing the standard tokenization with Charm.
 Dinov2-small is employed for all experiments except for *, which
 shows the ViT-small backbone.
-
+<div align="center">
 <img src=Figures/convergence.jpg width="400" />
-
+</div>
 The epoch at which each model achieves its highest
 validation performance across different datasets. Charm generally
 leads to faster convergence. 
@@ -57,7 +57,10 @@ Pretrained models are available at [**HuggingFace**](https://huggingface.co/Fate
 
 
 ## Quick inference
-Please read [this page](ReadMe_Inference.md).
+
+:globe_with_meridians:	Google Colab: [Colab](Charm.ipynb)
+
+:desktop_computer: On your system: Please read [this page](ReadMe_Inference.md).
 
 
 ## Training 
