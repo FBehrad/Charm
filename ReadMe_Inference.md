@@ -1,7 +1,7 @@
 # Charm: The Missing Piece in ViT fine-tuning for Image Aesthetic Assessment
 
 We introduce **Charm** , a novel tokenization approach that preserves **C**omposition, **H**igh-resolution,
-**A**spect **R**atio, and **M**ulti-scale information simultaneously. By preserving critical aesthetic information, <em> Charm </em> achieves significant performance improvement across different image aesthetic and quality assessment datasets.
+**A**spect **R**atio, and **M**ulti-scale information simultaneously. By preserving critical information, <em> Charm </em> works like a charm for image aesthetic and quality assessment 🌟🌟🌟.
 
 
 ### Quick Inference
