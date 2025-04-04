@@ -1,7 +1,7 @@
 # 💫 Charm: The Missing Piece in ViT fine-tuning for Image Aesthetic Assessment
 
-> [**Accepted at CVPR 2025**](https://cvpr.thecvf.com/virtual/2025/poster/34423)<br>
-
+> [**Accepted at CVPR 2025**](https://cvpr.thecvf.com/virtual/2025/poster/34423)<br><br>
+> Arxiv: https://arxiv.org/abs/2504.02522 
 <div align="center">
 <a href="https://github.com/FBehrad/Charm">
     <img src="https://github.com/FBehrad/Charm/blob/main/Figures/MainFigure.jpg?raw=true" alt="Overall framework" width="400"/>
