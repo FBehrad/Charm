@@ -58,7 +58,7 @@ Pretrained models are available at [**HuggingFace**](https://huggingface.co/Fate
 
 ## Quick inference
 
-:globe_with_meridians:	Google Colab: [Colab](Charm.ipynb)
+:globe_with_meridians:	Google Colab: [Colab](charm.ipynb)
 
 :desktop_computer: On your system: Please read [this page](ReadMe_Inference.md).
 
