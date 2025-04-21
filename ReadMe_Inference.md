@@ -30,16 +30,16 @@ from Charm_tokenizer.ImageProcessor import Charm_Tokenizer
 
 img_path = r"img.png"
 
-charm_tokenizer = Charm_Tokenizer(patch_selection='frequency', training_dataset='tad66k', without_pad_or_dropping=True)
+charm_tokenizer = Charm_Tokenizer(patch_selection='frequency', training_dataset='tad66k',backbone='facebook/dinov2-small', without_pad_or_dropping=True)
 tokens, pos_embed, mask_token = charm_tokenizer.preprocess(img_path)
 ```
 Charm Tokenizer has the following input args:
 * patch_selection (str): The method for selecting important patches
   * Options: 'saliency', 'random', 'frequency', 'gradient', 'entropy', 'original'.
 * training_dataset (str): Used to set the number of ViT input tokens to match a specific training dataset from the paper.
-  * Aesthetic assessment datasets: 'aadb', 'tad66k', 'para', 'baid'.
+  * Aesthetic assessment datasets: 'ava', 'aadb', 'tad66k', 'para', 'baid'.
   * Quality assessment datasets: 'spaq', 'koniq10k'.
-* backbone (str): The ViT backbone model (default: 'facebook/dinov2-small').
+* backbone (str): The ViT backbone model (default: 'facebook/dinov2-small' **(for all datasets except for AVA)** and 'facebook/dinov2-large' **(Just for AVA)**.
 * factor (float): The downscaling factor for less important patches (default: 0.5).
 * scales (int): The number of scales used for multiscale processing (default: 2).
 * random_crop_size (tuple): Used for the 'original' patch selection strategy (default: (224, 224)).
