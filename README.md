@@ -1,6 +1,7 @@
 # 💫 Charm: The Missing Piece in ViT fine-tuning for Image Aesthetic Assessment
 
 > [**Accepted at CVPR 2025**](https://cvpr.thecvf.com/virtual/2025/poster/34423)<br><br>
+> [Presented at Vision Science Society (VSS) 2025](https://www.visionsciences.org/presentation/?id=1825)<br><br>
 > Arxiv: https://arxiv.org/abs/2504.02522 
 <div align="center">
 <a href="https://github.com/FBehrad/Charm">
@@ -8,10 +9,8 @@
 </a>
 </div>
 
-
 We introduce **Charm** , a novel tokenization approach that preserves **C**omposition, **H**igh-resolution,
 **A**spect **R**atio, and **M**ulti-scale information simultaneously. By preserving critical aesthetic information, <em> Charm </em> achieves significant performance improvement across different image aesthetic assessment datasets.
-
 
 ## Introduction
 
@@ -41,6 +40,11 @@ shows the ViT-small backbone.
 The epoch at which each model achieves its highest
 validation performance across different datasets. Charm generally
 leads to faster convergence. 
+
+
+## Posters
+CVPR poster (Soon!) </br>
+[VSS poster](https://github.com/FBehrad/Charm/blob/main/posters/vss_poster_final.pdf)
 
 
 ## Standard Installation
@@ -81,3 +85,7 @@ If you find this repo useful in your research, please star ⭐ this repository a
 ## Acknowledgments
 Funded by the European Union (ERC AdG, GRAPPA, 101053925, awarded to Johan Wagemans) and 
 the Research Foundation-Flanders (FWO, 1159925N, awarded to Fatemeh Behrad).
+
+## Follow me on LinkedIn
+<a href="https://www.linkedin.com/in/fatemehbehrad/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/LinkedIn.svg" alt="My LinkedIn" width="48"></a>
+
