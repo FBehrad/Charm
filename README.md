@@ -43,7 +43,7 @@ leads to faster convergence.
 
 
 ## Posters
-CVPR poster (Soon!) </br>
+[CVPR poster](https://github.com/FBehrad/Charm/blob/main/posters/cvpr_poster_final.pdf) </br>
 [VSS poster](https://github.com/FBehrad/Charm/blob/main/posters/vss_poster_final.pdf)
 
 
