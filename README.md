@@ -2,7 +2,9 @@
 
 > [**Accepted at CVPR 2025**](https://cvpr.thecvf.com/virtual/2025/poster/34423)<br><br>
 > [Presented at Vision Science Society (VSS) 2025](https://www.visionsciences.org/presentation/?id=1825)<br><br>
-> Arxiv: https://arxiv.org/abs/2504.02522 
+> Arxiv: https://arxiv.org/abs/2504.02522
+
+## Introduction
 <div align="center">
 <a href="https://github.com/FBehrad/Charm">
     <img src="https://github.com/FBehrad/Charm/blob/main/Figures/MainFigure.jpg?raw=true" alt="Overall framework" width="400"/>
@@ -11,8 +13,6 @@
 
 We introduce **Charm** , a novel tokenization approach that preserves **C**omposition, **H**igh-resolution,
 **A**spect **R**atio, and **M**ulti-scale information simultaneously. By preserving critical aesthetic information, <em> Charm </em> achieves significant performance improvement across different image aesthetic assessment datasets.
-
-## Introduction
 
 The capacity of Vision transformers (ViTs) to handle variable-sized inputs is often constrained by computational
 complexity and batch processing limitations. Consequently, ViTs are typically trained on small, fixed-size images obtained through downscaling or cropping. While reducing
@@ -23,7 +23,6 @@ ViTs and their learned positional embeddings. By providing multiscale input and 
 <em> Charm </em>  improves ViT performance and generalizability for image aesthetic assessment. We avoid cropping or changing
 the aspect ratio to further preserve information. Extensive experiments demonstrate significant performance improvements on various image aesthetic and quality assessment
 datasets (up to 8.1 %) using a lightweight ViT backbone. 
-
 
 ## Performance improvement across various datasets
 Charm not only improves the performance of image aesthetic/quality assessment models but also accelerates their convergence.
@@ -46,6 +45,12 @@ leads to faster convergence.
 [CVPR poster](https://github.com/FBehrad/Charm/blob/main/posters/cvpr_poster_final.pdf) </br>
 [VSS poster](https://github.com/FBehrad/Charm/blob/main/posters/vss_poster_final.pdf)
 
+## Video Presentation 
+<div align="center">
+<a href="https://youtu.be/QnJTx13ARwE?si=RdoQlEl99etRnM1v">
+    <img src="https://github.com/FBehrad/Charm/blob/main/Figures/image.png" alt="CVPR video presentation" width="600"/>
+</a>
+</div>
 
 ## Standard Installation
 
