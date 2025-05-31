@@ -1,8 +1,13 @@
+<div align="center">
+    
 # 💫 Charm: The Missing Piece in ViT fine-tuning for Image Aesthetic Assessment
 
-> [**Accepted at CVPR 2025**](https://cvpr.thecvf.com/virtual/2025/poster/34423)<br><br>
-> [Presented at Vision Science Society (VSS) 2025](https://www.visionsciences.org/presentation/?id=1825)<br><br>
-> Arxiv: https://arxiv.org/abs/2504.02522
+[![Conference](http://img.shields.io/badge/Conference-CVPR_2025-cb0404.svg?)]([#](https://cvpr.thecvf.com/virtual/2025/poster/34423))
+[![Conference](http://img.shields.io/badge/Conference-VSS_2025-f4631e.svg?)]([#](https://www.visionsciences.org/presentation/?id=1825))
+[![Paper](http://img.shields.io/badge/Paper-Arxiv-309898.svg?)]([#](https://arxiv.org/abs/2504.02522))
+
+</div>
+
 
 ## Introduction
 <div align="center">
