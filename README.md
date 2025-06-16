@@ -84,11 +84,13 @@ Configure the values in the [config file](config.yaml) and execute [train.py](tr
 If you find this repo useful in your research, please star ⭐ this repository and consider citing 📝:
 
 ```bibtex
-@Inproceedings{Behrad2025Charm,
-  author    = {Fatemeh Behrad and Tinne Tuytelaars and Johan Wagemans},
-  title     = {Charm: The Missing Piece in ViT fine-tuning for Image Aesthetic Assessment},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year      = {2025},
+@InProceedings{Behrad_2025_CVPR,
+    author    = {Behrad, Fatemeh and Tuytelaars, Tinne and Wagemans, Johan},
+    title     = {Charm: The Missing Piece in ViT Fine-Tuning for Image Aesthetic Assessment},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {7815-7824}
 }
 ```
 
