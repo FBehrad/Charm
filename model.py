@@ -42,7 +42,7 @@ class PatchEmbeddings(nn.Module):
             self.cls_token = model.embeddings.cls_token
 
         if self.patch_selection == 'original':
-            self.patch_embedder = model.embeddings.patch_embeddings
+            self.patch_embedder = model.embeddings
         else:
             if 'swin' not in config.encoder_name:
                 self.se = self.se_initialization(self.scales, model.embeddings.position_embeddings.shape[-1])  # scale embeddings
@@ -235,3 +235,4 @@ if __name__ == '__main__':
     config.model.encoder_name = 'microsoft/swin-small-patch4-window7-224'
     model = Model(config)
     print('Hi')
+
