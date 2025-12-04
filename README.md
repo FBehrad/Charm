@@ -51,11 +51,12 @@ leads to faster convergence.
 [VSS poster](https://github.com/FBehrad/Charm/blob/main/posters/vss_poster_final.pdf)
 
 ## Video Presentation 
-<div align="center">
+[here](https://youtu.be/QnJTx13ARwE?si=RdoQlEl99etRnM1v)
+<!-- <div align="center">
 <a href="https://youtu.be/QnJTx13ARwE?si=RdoQlEl99etRnM1v">
     <img src="https://github.com/FBehrad/Charm/blob/main/Figures/image.png" alt="CVPR video presentation" width="600"/>
 </a>
-</div>
+</div> -->
 
 ## Standard Installation
 
